@@ -18,8 +18,20 @@
 
 
 # exit() #exit()- отменяет код, который записан ниже
-path ='file.txt'
-data=open(path,'r')
-for line in data:
-    print(line)
-data.close()
+# path ='file.txt'
+# data=open(path,'r')
+# for line in data:
+#     print(line)
+# data.close()
+
+
+
+
+
+# import example
+# print(example.f(1))
+
+# Или можно использовать 
+
+import example as ex
+print(ex.f(1))
