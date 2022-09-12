@@ -1,9 +1,9 @@
 
-#a-открытие для добавления данных; r- для чтения; w-  для записи
+#a-открытие для добавления данных; r- для чтения; w-  для записи.
 
-# with open('file.txt','w') as data:
-#     data.write('line 1\n')
-#     data.write('line 2\n')
+with open('file2.txt','w') as data:
+    data.write('line 1111\n')
+    data.write('line 2\n')
 
 
 
@@ -33,5 +33,5 @@
 
 # Или можно использовать 
 
-import example as ex
-print(ex.f(1))
+# import example as ex
+# print(ex.f(1))

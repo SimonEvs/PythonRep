@@ -42,7 +42,6 @@
 # print(f'Разница = {x}')
 
 
-
 # Напишите программу, которая будет преобразовывать десятичное число в двоичное(без встроенных функций).
 
 # Пример:
@@ -53,22 +52,43 @@
 
 #     return Ten_to_two(n)
 
-result = []
-def Ten_to_two(x):
-    if (x == 0):
-        return l
-    temp = x % 2
-    result.append(temp)
-    Ten_to_two(x // 2)
-a = int(input("Введите число: "))
-Ten_to_two(a)
-result.reverse()
-print("Двоичная форма числа:")
-for i in l:
-    print(i,end='')
+# result = []
+# def Ten_to_two(x):
+#     if (x == 0):
+#         return l
+#     temp = x % 2
+#     result.append(temp)
+#     Ten_to_two(x // 2)
+# a = int(input("Введите число: "))
+# Ten_to_two(a)
+# result.reverse()
+# print("Двоичная форма числа:")
+# for i in l:
+#     print(i,end='')
 
 # Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
 
 # Пример:
 
 # для k = 8 список будет выглядеть так: [-21, 13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+
+fib1 = fib2 = 1
+n = int(input('Введите число '))
+my_list = [1]
+pro_list = [1, 0, 1]
+new_list = []
+for i in range(2, n):
+    fib1, fib2 = fib2, fib1 + fib2
+    my_list.append(int(fib2))
+# print(f'\n{my_list}')
+new_list = my_list.copy()
+for i in range(0, len(new_list)):
+    if (i % 2) == 0:
+        new_list[i] *= (-1)
+
+new_list.reverse()
+# print(new_list)
+
+result_list = new_list + pro_list + my_list
+print(result_list)
