@@ -1,19 +1,27 @@
 # 1.Вычислить число c заданной точностью d
 
-def Find_Number(k):
-    import math
-    n=math.pi
-    print(f'Ответ: {round(n,k)}')
-
-print('Введите число, до какого знака после запятой хотите округлить:')
-find=input()
-Find_Number(int(find))
+# def Find_Number(k):
+#     import math
+#     n = math.pi
+#     print(f'Ответ: {round(n,k)}')
 
 
+# print('Введите число, до какого знака после запятой хотите округлить:')
+# find = input()
+# Find_Number(int(find))
 
-# при $d = 0.001, π = 3.141
+
 # 2.Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
 # "20" -> [2, 2, 5]
+
+def Manuscript(number):
+    my_list = []
+    for i in range(1,number+1):
+        if(number%i==0):
+            my_list.append(i)
+    print(my_list)
+Manuscript(20)
+
 
 # 3.Задайте последовательность чисел. Напишите программу, которая выведет список
 # неповторяющихся элементов исходной последовательности.
