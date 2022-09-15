@@ -1,9 +1,9 @@
 
 #a-открытие для добавления данных; r- для чтения; w-  для записи.
 
-with open('file2.txt','w') as data:
-    data.write('line 1111\n')
-    data.write('line 2\n')
+# with open('file2.txt','w') as data:
+#     data.write('line 1111\n')
+#     data.write('line 2\n')
 
 
 
@@ -35,3 +35,10 @@ with open('file2.txt','w') as data:
 
 # import example as ex
 # print(ex.f(1))
+
+
+
+path ='file.txt'
+f=open(path,'r')
+data=f.read()+' '
+f.close()

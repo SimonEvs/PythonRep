@@ -84,7 +84,12 @@
 #         data.write(f'0 = 0')
 
 
-
-
 # 5.Даны два файла, в каждом из которых находится запись многочлена.
 # Задача - сформировать файл, содержащий сумму многочленов.
+path = 'Python\HelloPython\SecondLesson\tasks\first.txt'
+data = open(path, 'r')
+for line in data:
+    print(line)
+data.close()
+
+exit()
