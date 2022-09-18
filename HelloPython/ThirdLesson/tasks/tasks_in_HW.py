@@ -113,24 +113,35 @@ for i in range(0, 4):
     second = int(input('Введите переменную '))
     system("cls")
 # if second !=('X') and second !=('O'):
-    if second == 1 and (A[0] != ('O')) and (A[0] != ('X')):
-        A[0] = 'O'
-    if second == 2 and A[1] != ('O') and A[1] != ('X'):
-        A[1] = 'O'
-    if second == 3 and A[2] != ('O') and A[2] != ('X'):
-        A[2] = 'O'
-    if second == 4 and B[0] != ('O') and B[0] != ('X'):
-        B[0] = 'O'
-    if second == 5 and B[1] != ('O') and B[1] != ('X'):
-        B[1] = 'O'
-    if second == 6 and B[2] != ('O') and B[2] != ('X'):
-        B[2] = 'O'
-    if second == 7 and C[0] != ('O') and C[0] != ('X'):
-        C[0] = 'O'
-    if second == 8 and C[1] != ('O') and C[1] != ('X'):
-        C[1] = 'O'
-    if second == 9 and C[2] != ('O') and C[2] != ('X'):
-        C[2] = 'O'
+    for i in range(0,2):
+        if second==(i+1) and (A[i] != ('O')) and (A[i] != ('X')):
+        # if second == 1 and (A[0] != ('O')) and (A[0] != ('X')):
+        #     A[0] = 'O'
+        # if second == 2 and A[1] != ('O') and A[1] != ('X'):
+        #     A[1] = 'O'
+        # if second == 3 and A[2] != ('O') and A[2] != ('X'):
+        #     A[2] = 'O'
+            A[i]='O'
+    i=0
+    for i in range(0,2):
+        if second==(i+4) and (B[i] != ('O')) and (B[i] != ('X')):
+        # if second == 4 and B[0] != ('O') and B[0] != ('X'):
+        #     B[0] = 'O'
+        # if second == 5 and B[1] != ('O') and B[1] != ('X'):
+        #     B[1] = 'O'
+        # if second == 6 and B[2] != ('O') and B[2] != ('X'):
+        #     B[2] = 'O'
+            B[i]='O'
+    i=0        
+    for i in range(0,2):
+        if second==(i+7) and (C[i] != ('O')) and (C[i] != ('X')):
+        # if second == 7 and C[0] != ('O') and C[0] != ('X'):
+        #     C[0] = 'O'
+        # if second == 8 and C[1] != ('O') and C[1] != ('X'):
+        #     C[1] = 'O'
+        # if second == 9 and C[2] != ('O') and C[2] != ('X'):
+        #     C[2] = 'O'
+            C[i]='O'
     print(A)
     print(B)
     print(C)
