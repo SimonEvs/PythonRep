@@ -39,7 +39,6 @@ outcoming_list=[i for i in incomming_list if incomming_list.count(i)==1]
 print(outcoming_list)
 
 outcoming_list2=list(filter(lambda x: incomming_list.count(x)==1,incomming_list))
-
 print(outcoming_list2)
 
 
