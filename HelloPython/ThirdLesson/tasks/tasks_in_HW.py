@@ -57,66 +57,66 @@
 
 # 3.Создайте программу для игры в ""Крестики-нолики"".
 
-# def ResultKN(A,B,C):
-#     system("cls") 
-#     print(A)
-#     print(B)
-#     print(C)
-#     #if A[0]==B[0]==C[0]==(('X')or('O')) or A[1]==B[1]==C[1]==(('X')or('O')) or A[2]==B[2]==C[2]==(('X')or('O')) or A[0]==A[1]==A[2]==(('X')or('O')) or A[0]==A[1]==A[2]==(('X')or('O')) or B[0]==B[1]==B[2]==(('X')or('O')) or C[0]==C[1]==C[2]==(('X')or('O')) or A[0]==B[1]==C[2]==(('X')or('O')) or A[2]==B[1]==C[0]==(('X')or('O')):
-#     if (A[0]==B[0]==C[0]==('X') or A[1]==B[1]==C[1]==('X') 
-#         or A[2]==B[2]==C[2]==(('X')) or A[0]==A[1]==A[2]==('X') 
-#         or A[0]==A[1]==A[2]==('X') or B[0]==B[1]==B[2]==('X') 
-#         or C[0]==C[1]==C[2]==('X') or A[0]==B[1]==C[2]==('X') 
-#         or A[2]==B[1]==C[0]==('X')  or   A[0]==B[0]==C[0]==('O') or A[1]==B[1]==C[1]==('O') 
-#         or A[2]==B[2]==C[2]==(('O')) or A[0]==A[1]==A[2]==('O') 
-#         or A[0]==A[1]==A[2]==('O') or B[0]==B[1]==B[2]==('O') 
-#         or C[0]==C[1]==C[2]==('O') or A[0]==B[1]==C[2]==('O') 
-#         or A[2]==B[1]==C[0]==('O') ):
+def ResultKN(A,B,C):
+    system("cls") 
+    print(A)
+    print(B)
+    print(C)
+    #if A[0]==B[0]==C[0]==(('X')or('O')) or A[1]==B[1]==C[1]==(('X')or('O')) or A[2]==B[2]==C[2]==(('X')or('O')) or A[0]==A[1]==A[2]==(('X')or('O')) or A[0]==A[1]==A[2]==(('X')or('O')) or B[0]==B[1]==B[2]==(('X')or('O')) or C[0]==C[1]==C[2]==(('X')or('O')) or A[0]==B[1]==C[2]==(('X')or('O')) or A[2]==B[1]==C[0]==(('X')or('O')):
+    if (A[0]==B[0]==C[0]==('X') or A[1]==B[1]==C[1]==('X') 
+        or A[2]==B[2]==C[2]==(('X')) or A[0]==A[1]==A[2]==('X') 
+        or A[0]==A[1]==A[2]==('X') or B[0]==B[1]==B[2]==('X') 
+        or C[0]==C[1]==C[2]==('X') or A[0]==B[1]==C[2]==('X') 
+        or A[2]==B[1]==C[0]==('X')  or   A[0]==B[0]==C[0]==('O') or A[1]==B[1]==C[1]==('O') 
+        or A[2]==B[2]==C[2]==(('O')) or A[0]==A[1]==A[2]==('O') 
+        or A[0]==A[1]==A[2]==('O') or B[0]==B[1]==B[2]==('O') 
+        or C[0]==C[1]==C[2]==('O') or A[0]==B[1]==C[2]==('O') 
+        or A[2]==B[1]==C[0]==('O') ):
         
-#         print("Игра окончена")
-#         exit()
+        print("Игра окончена")
+        exit()
      
 
-# from os import system
+from os import system
 
-# A = ['-', '-', '-']
-# B = ['-', '-', '-']
-# C = ['-', '-', '-']
+A = ['-', '-', '-']
+B = ['-', '-', '-']
+C = ['-', '-', '-']
 
-# for i in range(0, 4):
-#     first = int(input('Введите место, куда хотете поставить Х '))
-#     system("cls")
-#     for i in range(0,3):
-#         if first==(i+1) and (A[i] != ('O')) and (A[i] != ('X')):
-#             A[i]='X'
-#             ResultKN(A,B,C)
+for i in range(0, 4):
+    first = int(input('Введите место, куда хотете поставить Х '))
+    system("cls")
+    for i in range(0,3):
+        if first==(i+1) and (A[i] != ('O')) and (A[i] != ('X')):
+            A[i]='X'
+            ResultKN(A,B,C)
         
-#     for j in range(0,3):
-#         if first==(j+4) and (B[j] != ('O')) and (B[j] != ('X')):
-#             B[j]='X'
-#             ResultKN(A,B,C)
+    for j in range(0,3):
+        if first==(j+4) and (B[j] != ('O')) and (B[j] != ('X')):
+            B[j]='X'
+            ResultKN(A,B,C)
                 
-#     for k in range(0,3):
-#         if first==(k+7) and (C[k] != ('O')) and (C[k] != ('X')):
-#             C[k]='X'
-#             ResultKN(A,B,C)
+    for k in range(0,3):
+        if first==(k+7) and (C[k] != ('O')) and (C[k] != ('X')):
+            C[k]='X'
+            ResultKN(A,B,C)
 
-#     second = int(input('Введите место, куда хотите поставить О '))
-#     system("cls")
-#     for i in range(0,3):
-#         if second==(i+1) and (A[i] != ('O')) and (A[i] != ('X')):
-#             A[i]='O'
-#             ResultKN(A,B,C)
+    second = int(input('Введите место, куда хотите поставить О '))
+    system("cls")
+    for i in range(0,3):
+        if second==(i+1) and (A[i] != ('O')) and (A[i] != ('X')):
+            A[i]='O'
+            ResultKN(A,B,C)
     
-#     for j in range(0,3):
-#         if second==(j+4) and (B[j] != ('O')) and (B[j] != ('X')):
-#             B[j]='O'
-#             ResultKN(A,B,C)
+    for j in range(0,3):
+        if second==(j+4) and (B[j] != ('O')) and (B[j] != ('X')):
+            B[j]='O'
+            ResultKN(A,B,C)
             
-#     for k in range(0,3):
-#         if second==(k+7) and (C[k] != ('O')) and (C[k] != ('X')):
-#             C[k]='O'
-#             ResultKN(A,B,C)
+    for k in range(0,3):
+        if second==(k+7) and (C[k] != ('O')) and (C[k] != ('X')):
+            C[k]='O'
+            ResultKN(A,B,C)
 
 
 # 4.Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
