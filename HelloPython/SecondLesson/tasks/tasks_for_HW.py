@@ -81,14 +81,13 @@ new_list = []
 for i in range(2, n):
     fib1, fib2 = fib2, fib1 + fib2
     my_list.append(int(fib2))
-# print(f'\n{my_list}')
 new_list = my_list.copy()
 for i in range(0, len(new_list)):
     if (i % 2) == 0:
         new_list[i] *= (-1)
 
 new_list.reverse()
-# print(new_list)
+
 
 result_list = new_list + pro_list + my_list
 print(result_list)
