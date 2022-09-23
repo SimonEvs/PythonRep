@@ -1,28 +1,34 @@
 
 
 
-def Input_Data():
-    name = input('Введите Имя: ')
-    surname = input('Введите Фамилию: ')
-    phone_number = input('Введите номер телефона: ')
-    other_inf = input('Введите описание: ')
-    print(f'{name}, {surname}, {phone_number}, {other_inf}')
+# def Input_Data():
+#     name = input('Введите Имя: ')
+#     surname = input('Введите Фамилию: ')
+#     phone_number = input('Введите номер телефона: ')
+#     other_inf = input('Введите описание: ')
+#     print(f'{name}, {surname}, {phone_number}, {other_inf}')
 
 # Input_Data()
 
 
-def get_Name(data):
-    name=input('введите Имя: ')
+def get_Name():
+    print('Введите имя: ')
+    name= input()
     return name
 
-def get_surname(data):
-    surname=input('Введите фамилию: ')
+def get_surname():
+    print('Введите фамилию: ')
+    surname=input()
     return surname
 
-def get_phone_number(data):
-    phone=('Введите номер телефона: ')
+def get_phone_number():
+    print('Введите номер телефона: ')
+    phone=input()
     return phone
 
-def get_other(data):
-    other=('Введите остальное: ')
+def get_other():
+    print('Введите остальное: ')
+    other=input()
     return other
+
+# get_Name()

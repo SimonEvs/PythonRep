@@ -1,28 +1,31 @@
-
-# path = 'Phone_numbersfolder.txt'
-data=567
-
-def First_name(data):
-    with open('Phone_number_folder.csv','a') as file:
-        file.write('Name;{}\n'
-                        .format(data))
+import Data 
 
 
-def Second_name(data):
-    with open('Phone_number_folder.csv','a') as file:
-        file.write('Surname;{}\n'
-                        .format(data))
+def First_name(name):
+    with open('Phone_number_folder.csv', 'a') as file:
+        file.write('Name: {}\n'
+                   .format(name))
 
 
-def Phone_number(data):
-    with open('Phone_number_folder.csv','a') as file:
-        file.write('Phone number;{}\n'
-                        .format(data))
+def Second_name(surname):
+    with open('Phone_number_folder.csv', 'a') as file:
+        file.write('Surname: {}\n'
+                   .format(surname))
 
-def Other_information(data):
-    with open('Phone_number_folder.csv','a') as file:
-        file.write('Other;{}\n'
-                        .format(data))
 
-First_name(data)
-Second_name(data)
+def Phone_number(phone):
+    with open('Phone_number_folder.csv', 'a') as file:
+        file.write('Phone number: {}\n'
+                   .format(phone))
+
+
+def Other_information(other):
+    with open('Phone_number_folder.csv', 'a') as file:
+        file.write('Other: {}\n'
+                   .format(other))
+
+
+# First_name(Data.get_Name())
+# Second_name(Data.get_surname())
+# Phone_number(Data.get_phone_number())
+# Other_information(Data.get_other())
