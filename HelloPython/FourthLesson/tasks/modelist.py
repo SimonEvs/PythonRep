@@ -1,12 +1,19 @@
 import Data
 import recording
+import user_interface
 # from os import system
 # system("cls")
+# def Buttom_Finish():
+    # recording.First_name(Data.get_Name())
+    # recording.Second_name(Data.get_surname())
+    # recording.Phone_number(Data.get_phone_number())
+    # recording.Other_information(Data.get_other())
+
 def Buttom_Finish():
-    recording.First_name(Data.get_Name())
-    recording.Second_name(Data.get_surname())
-    recording.Phone_number(Data.get_phone_number())
-    recording.Other_information(Data.get_other())
+    user_interface.First_name_view()
+    user_interface.Second_name_view()
+    user_interface.Phone_number_view()
+    user_interface.Other_view()
 
     
 def Console_Read():

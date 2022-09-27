@@ -2,7 +2,7 @@ from os import system
 system("cls")
 import modelist
 
-# modelist.Print_Finish()
+
 n=input('Что вы хотите сделать?\n Чтобы записать в книгу нажмите 1.\n \
 Чтобы открыть для прочтения нажмите 2.\n Введите цифру: ')
     
