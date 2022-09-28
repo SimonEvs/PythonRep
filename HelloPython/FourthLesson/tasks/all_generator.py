@@ -1,57 +1,52 @@
+import Data
+def Finish_prog():
+    first=Data.get_Name()
+    second=Data.get_surname()
+    phone=Data.get_phone_number()
+    other=Data.get_other()
+    xml= '<xml>\n'
+    xml+= ' <Name units ="c">{}</name>\n'\
+        .format(first)
+    xml+= ' <Second units ="c">{}</surname>\n'\
+        .format(second)
+    xml+= ' <Phone Number units ="c">{}</phone>\n'\
+        .format(phone)
+    xml+= ' <Other units ="c">{}</other>\n'\
+        .format(other)
+
+    with open('phonebook.xml','w') as page:
+        page.write(xml)
 
 
-xml= '<xml>\n'
-xml+= ' <Name units ="c">{}</name>\n'\
-    .format(user_interface.First_name_view())
-xml+= ' <Second units ="c">{}</surname>\n'\
-    .format(user_interface.Second_name_view())
-xml+= ' <Phone Number units ="c">{}</phone>\n'\
-    .format(user_interface.Phone_number_view())
-xml+= ' <Other units ="c">{}</other>\n'\
-    .format(user_interface.Other_view())
 
-with open('phonebook.xml','w') as page:
-    page.write(xml)
-return xml
-
-
-
-def First_name(name):
     with open('Phone_number_folder.csv', 'a') as file:
         file.write('Name: {}\n'
-                   .format(name))
+            .format(first))
 
-
-def Second_name(surname):
     with open('Phone_number_folder.csv', 'a') as file:
         file.write('Surname: {}\n'
-                   .format(surname))
+            .format(second))
 
-
-def Phone_number(phone):
     with open('Phone_number_folder.csv', 'a') as file:
         file.write('Phone number: {}\n'
-                   .format(phone))
+            .format(phone))
 
-
-def Other_information(other):
     with open('Phone_number_folder.csv', 'a') as file:
         file.write('Other: {}\n'
-                   .format(other))
+            .format(other))
 
 
-style='style="font-size:22px;"'
+    style='style="font-size:22px;"'
     html ='<html>\n  <head></head>\n  <body>\n'
     html +='    <p {}>Name: {} c</p>\n'\
-        .format(style,user_interface.First_name_view())
+        .format(style,first)
     html +='    <p {}>Surname: {} c</p>\n'\
-        .format(style,user_interface.Second_name_view())
+        .format(style,second)
     html +='    <p {}>Phone: {} c</p>\n'\
-        .format(style,user_interface.Phone_number_view())
+        .format(style,phone)
     html +='    <p {}>Other: {} c</p>\n'\
-        .format(style,user_interface.Other_view())
+        .format(style,other)
     html+= '    </body>\n</html>'
 
-    with open('index.html','w') as page:
+    with open('phonebook.html','w') as page:
         page.write(html)
-    return html
